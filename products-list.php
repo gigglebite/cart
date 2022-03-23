@@ -44,7 +44,7 @@ $customer = new Customer('Aleeya Candelaria', 'candelaria.aleeyajenzen@auf.edu.p
 </nav>
 
 <div id="products_header">
-<img id="products_img" src="productheader5.jpg" class="img-fluid" alt="..." width="100%">
+<img id="products_img" src="home_header.png" class="img-fluid" alt="..." width="100%">
 <div class="centered"><h1>Products</h1></div>
 </div>
 
@@ -52,20 +52,25 @@ $customer = new Customer('Aleeya Candelaria', 'candelaria.aleeyajenzen@auf.edu.p
 <div class="row row-cols-1 row-cols-md-4 g-6">
 <?php foreach ($products as $product): ?>
     <div class="card">
+    <div id="container">
+
   <img src="<?php echo $product->getImage(); ?>" class="card-img-top" alt="...">
-<div class="card-body">
+    <div id="overlay">
+        <div id="text">
         <input type="hidden" name="product_id" value="<?php echo $product->getId(); ?>" />
-        <h5 class="card-title" id="title_card"><?php echo $product->getName(); ?></h5>
-    <p class="card-text">
+        <h5 id="title_card"><?php echo $product->getName(); ?></h5>
+    <p>
         <?php echo $product->getDescription(); ?><br/>
-        <span style="color: brown; font-weight: bold;">PHP <?php echo $product->getPrice(); ?></span>
+        <br><span style="color: white; font-weight: bold;">PHP <?php echo $product->getPrice(); ?></span>
         Qty <input id="quantity_style" type="number" name="quantity" class="quantity" value="" />
         <button class="btn btn-primary" id ="button_style" type="submit"> 
             ADD TO CART
         </button>
     </p>
-      </div>
+        </div>
     </div>
+</div>
+</div>
 <?php endforeach; ?>
   </div>
   </div>
@@ -73,6 +78,7 @@ $customer = new Customer('Aleeya Candelaria', 'candelaria.aleeyajenzen@auf.edu.p
 
 
 <style>
+
 #products_header {
   position: relative;
   text-align: center;
@@ -97,7 +103,44 @@ $customer = new Customer('Aleeya Candelaria', 'candelaria.aleeyajenzen@auf.edu.p
    opacity: 0.3;
 }
 
+
+.card-img-top {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+#overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4C342F;
+}
+
+#container:hover #overlay {
+  opacity: 0.9;
+}
+
+
+#text {
+    margin-top: 30px;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 span {
+    padding-top: 10px;
+    font-size:  20px;
     padding-left: 20px;
 }
 
@@ -106,15 +149,16 @@ span {
     background: #AD8D87;
     margin-top: 20px;
     margin-left: 20px;
+    padding-bottom: 10px;
     width:  350px;
 }
 
 #title_card {
-    font-size: 30px;
+    font-size: 35px;
 }
 
 #button_style {
-    background:  #592E26;
+    background:  #371F1A;
     border-color: #592E26;
     margin-top: 20px;
     margin-left: 50%;

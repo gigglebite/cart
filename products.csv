@@ -1,9 +1,9 @@
 id,name,description,price,image
-1,Americano,Orange Fruit,30,https://i.ibb.co/pPLZZVn/americano.png
-2,Capuccino,Apple Fruit,40,https://i.ibb.co/23nrzLX/capuccino.png
-3,Expresso,Mango Fruit,25,https://i.ibb.co/YhS2YKF/expresso.png21/06/02/550x309/9a156550-c367-11eb-9d53-2d5cae187b44_1622619423185.jpg
-4,Flat White,Banana Fruit,100,https://i.ibb.co/9hhfDC1/flat-white.png
-5,Glace,Watermelon Fruit,200,https://i.ibb.co/4FnHjcV/glace.png
-6,Frapuccino,Cream,140,https://i.ibb.co/M6NJhJy/frapuccino.png
-7,Macchiato,Tiny,150,https://i.ibb.co/XDWkCD8/macchiato.png
-8,Mocha Latte,Milk Cream,120,https://i.ibb.co/Qp6PGkS/mocha-latte.png
+1,Americano,An espresso that has been poured over or been diluted with hot water.,80,https://i.ibb.co/pPLZZVn/americano.png
+2,Capuccino,An espresso coffee topped with frothed hot milk or cream and often flavored with cinnamon.,120,https://i.ibb.co/23nrzLX/capuccino.png
+3,Expresso,A concentrated form of coffee served in small and strong shots.,125,https://i.ibb.co/YhS2YKF/expresso.png21/06/02/550x309/9a156550-c367-11eb-9d53-2d5cae187b44_1622619423185.jpg
+4,Flat White,A coffee drink consisting of espresso with microfoam.,100,https://i.ibb.co/9hhfDC1/flat-white.png
+5,Glace, An easy cold coffee drink made with ice cream and milk.,200,https://i.ibb.co/4FnHjcV/glace.png
+6,Frapuccino,A coffee drink with crème base blended with ice and ingredients such as flavored syrups and usually topped with whipped cream.,140,https://i.ibb.co/M6NJhJy/frapuccino.png
+7,Macchiato,An espresso coffee drink that is topped with a small amount of foamed.,150,https://i.ibb.co/XDWkCD8/macchiato.png
+8,Mocha Latte,The classic latte but with a kick of chocolatey and sweet syrup added.,120,https://i.ibb.co/Qp6PGkS/mocha-latte.png
